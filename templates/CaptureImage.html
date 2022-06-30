@@ -1,0 +1,20 @@
+<!-- Capture image  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <h3 class="mt-5">Capture Image</h3>
+      <p>Click Capture! by adjusting face in the display.</p>
+      <img src="{{ url_for('video_feed') }}" width="20%">
+      <form action="/capture" method="post" enctype="multipart/form-data">
+      <label for="i_name">Person Name</label>
+      <input type="text" name="i_name">
+      <!-- <button onclick="location.href='{{ url_for('capture') }}';" name="button">capture</button>
+     -->
+     <input type="submit"  value="capture">
+</form>
+  </body>
+</html>
